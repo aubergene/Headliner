@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+}
+
+#container {
+  width: 960px;
+  margin: auto;
+}
+
+#banner {
+  background: #636;
+  color: #969;
+  padding: 10px;
+}
+
+#banner h2 {
+  margin: 0;
+}
+
+#score {
+  float: right;
+  width: 300px;
+  text-align: right;
+  position: relative;
+  margin: -32px 0 0 0;
+  font-size: 32px;
+}
+
+#score_value {
+  color: #ccc;
+}
+
+#headline {
+  padding: 10px;
+  background: #ddd;
+  font-size: 42px;
+}
+
+#headline h2 {
+  font-weight: lighter;
+  margin: 0;
+  text-decoration: none;
+}
+
+#headline p {
+  margin: 0;
+  text-align: right;
+  font-size: 12px;
+}
+
+#box {
+  padding: 10px;
+  background: #ccc;
+}
+
+#box label {
+  font-size: 22px;
+}
+
+table td {
+  vertical-align: top;
+  width: 50%;
+}
+
+#results {
+  float: left;
+}
+
+.result {
+  padding: 10px;
+  padding-left: 44px;
+  margin: 0 0 2px 0;
+}
+
+.correct {
+  background: #cfc url(/images/correct.png) 10px no-repeat;
+}
+
+.incorrect {
+  background: #fcc url(/images/incorrect.png) 10px no-repeat;
+}

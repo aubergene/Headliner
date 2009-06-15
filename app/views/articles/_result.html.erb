@@ -1,0 +1,4 @@
+<div id="result<%= @vote.id %>" class="result <%= @vote.result.downcase %>">
+  <a href="<%=h @vote.article.link %>"><%=h @vote.article.title %></a>
+   - <a href="<%= @vote.article.source.website %>"><%= h @vote.article.source.name %></a>
+</div>

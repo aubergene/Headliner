@@ -1,0 +1,14 @@
+<% if @votes.empty? %>
+<p>No votes for this headline yet.</p>
+<% else %>
+<%= @votes_max %>
+<table>
+  <% @sources.each do |source| %>
+  <tr>
+    <td><%=h source.name %></td>
+    <td><%= @votes[source.id] %></td>
+    <td>(<%= number_to_percentage(100 * (@votes[source.id].to_f / @votes_sum), :precision => 0) %>)</td>
+  </tr>
+  <% end %>
+</table>
+<% end %>

@@ -1,0 +1,12 @@
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Filtered title</th>
+  </tr>
+  <% @articles.each do |article| %>
+  <tr>
+    <td><%=h article.title %></td>
+    <td><%=h article.filtered_title if article.title != article.filtered_title %></td>
+  </tr>
+  <% end -%>
+</table>

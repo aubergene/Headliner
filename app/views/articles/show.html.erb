@@ -1,0 +1,30 @@
+<div id="headline">
+  <%= render @article %>
+</div>
+
+<table cellspacing="0" cellpadding="0">
+<tr>
+  <td>
+  <div id="box">
+  <p>Guess which of the following publications produced the headline above.</p>
+  <% form_remote_tag :url => vote_path, :html => { :id => 'vote_form', :name => 'vote_form' } do -%>
+    <%= hidden_field_tag 'article_id', @article.id %>
+    <p><% @sources.each do |source| -%>
+      <input type="radio" name="source_id" id="source_id_<%= source.id %>" value="<%= source.id %>" onclick="document.vote_form.submit_button.click()" />
+      <label for="source_id_<%= source.id %>"><%=h source.name %></label><br />
+    <% end -%></p>
+    <%= submit_tag 'Submit', :name => nil, :id => "submit_button" %>
+  <% end -%>
+  </div>
+  </td>
+  <td>
+  <div id="results">
+    <div>
+
+    </div>
+  </div>
+  </td>
+</tr>
+</table>
+
+<p>Icons by <a href="http://mouserunner.com">MouseRunner.com</a>.</p>

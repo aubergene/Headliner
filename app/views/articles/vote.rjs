@@ -1,0 +1,10 @@
+# create.rjs
+#page.visual_effect :appear, "results", :duration => 0.8
+page.visual_effect :highlight, "scoreValue", :startcolor => '#993399', :endcolor => '#663366'
+page.insert_html :top, :results, :partial => 'result', :object => @vote
+page.replace_html :scoreValue, "#{@score}/#{@total}"
+page[:vote_form].reset
+page.replace_html :article_id, "<input id=\"article_id\" name=\"article_id\" type=\"hidden\" value=\"#{@article.id}\" />"
+page.replace_html :headline, :partial => 'article', :object => @article
+#page.replace_html :notice, flash[:notice]
+#flash.discard
