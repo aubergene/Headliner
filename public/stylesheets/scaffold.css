@@ -79,3 +79,10 @@ table td {
 .incorrect {
   background: #fcc url(/images/incorrect.png) 10px no-repeat;
 }
+
+#footer {
+  background: #ddd;
+  color: #777;
+  padding: 8px;
+  font-size: 11px;
+}

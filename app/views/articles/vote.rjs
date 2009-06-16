@@ -8,3 +8,4 @@ page.replace_html :article_id, "<input id=\"article_id\" name=\"article_id\" typ
 page.replace_html :headline, :partial => 'article', :object => @article
 #page.replace_html :notice, flash[:notice]
 #flash.discard
+page << "urchinTracker('vote?article=#{@article.id}&source=#{source.id}');"
