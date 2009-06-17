@@ -11,7 +11,7 @@ class Article < ActiveRecord::Base
   end
 
   def self.random
-    Article.find(:first, :order=>'RAND()')
+    Article.find(:first, :conditions => ["updated_at > ?",Time.now - 2.days], :order=>'RAND()')
   end
 
 end
