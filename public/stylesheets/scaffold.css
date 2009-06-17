@@ -73,11 +73,11 @@ table td {
 }
 
 .correct {
-  background: #cfc url(/images/correct.png) 10px no-repeat;
+  background: #cfc url(../images/correct.png) 10px no-repeat;
 }
 
 .incorrect {
-  background: #fcc url(/images/incorrect.png) 10px no-repeat;
+  background: #fcc url(../images/incorrect.png) 10px no-repeat;
 }
 
 #footer {
