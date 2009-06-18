@@ -1,0 +1,36 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+1:
+ name: The Times
+ feed_url: http://feeds.timesonline.co.uk/c/32313/f/440134/index.rss
+ website: http://www.timesonline.co.uk
+
+2:
+ name: BBC News
+ feed_url: http://newsrss.bbc.co.uk/rss/newsonline_uk_edition/front_page/rss.xml
+ website: http://news.bbc.co.uk
+
+3:
+ name: The Telegraph
+ feed_url: http://www.telegraph.co.uk/rss
+ website: http://www.telegraph.co.uk
+
+4:
+ name: The Independent
+ feed_url: http://rss.feedsportal.com/c/266/f/3492/index.rss
+ website: http://www.independent.co.uk
+
+5:
+ name: The Guardian
+ feed_url: http://feeds.guardian.co.uk/theguardian/rss
+ website: http://www.guardian.co.uk
+
+6:
+ name: The Daily Mail
+ feed_url: http://www.dailymail.co.uk/home/index.rss
+ website: http://www.dailymail.co.uk
+
+7:
+ name: The Sun
+ feed_url: http://www.thesun.co.uk/sol/homepage/feeds/rss/article312900.ece
+ website: http://www.thesun.co.uk
