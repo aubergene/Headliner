@@ -63,13 +63,18 @@ table td {
 }
 
 #results {
-  float: left;
+
 }
 
 .result {
   padding: 10px;
   padding-left: 44px;
   margin: 0 0 2px 0;
+  display: block;
+}
+
+#submit_button {
+  visibility: hidden;
 }
 
 .correct {
