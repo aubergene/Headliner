@@ -20,8 +20,8 @@ class Source < ActiveRecord::Base
         article = Article.find_or_create_by_guid(guid)
         article.source = self
   #      guid = (item/"guid").inner_text.strip
-        article.title = (item/"title").inner_text.encode('UTF-8').strip
-        article.link = (item/"link").inner_text.encode('UTF-8').strip
+        article.title = (item/"title").inner_text.strip
+        article.link = (item/"link").inner_text.strip
         article.pub_date = Time.parse((item/"pubDate").inner_text)
         imported += 1 if article.new_record?
         article.save!
@@ -29,7 +29,7 @@ class Source < ActiveRecord::Base
           break
         end
       rescue
-        warn "could not import"
+        warn "Could not import #{$!}"
       end
     end
     puts "Imported #{imported} article(s)"
